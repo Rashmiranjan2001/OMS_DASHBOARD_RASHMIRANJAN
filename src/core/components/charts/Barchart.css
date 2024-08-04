@@ -1,0 +1,27 @@
+/* Barchart.css */
+.chart-view {
+    height: 250px;
+    width: 100%;
+    background-color: #1e1e2d;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling on mobile devices */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.chart-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        overflow-x: auto; /* Enable horizontal scrolling on mobile devices */
+    }
+    .chart-view {
+        width: 2000px; /* Adjust this value based on the content size */
+    }
+}
+
+
+

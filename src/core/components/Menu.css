@@ -1,0 +1,81 @@
+.menu {
+    padding-top: 16px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-item .icon {
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    color: #fff;
+  }
+  
+  .menu-item .text {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .menu-item .chevron {
+    color: #fff;
+    background-color: #2c2c2c;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  @media (max-width: 640px) { /* Adjust this breakpoint as needed */
+    .custom-form {
+      width: 240%;
+    }
+  }
+
+/* sidebar.css */
+.sidebar {
+    position: fixed;
+    background-color: #1f2937; /* Tailwind's bg-gray-900 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-xl */
+    height: 100vh;
+    width: fit-content; /* Adjust width based on content */
+    transform: translateX(-100%); /* Hidden by default on mobile */
+    transition: transform 0.3s;
+  }
+  
+  /* Show sidebar on large screens */
+  @media (min-width: 1024px) { /* Tailwind's lg breakpoint */
+    .sidebar {
+      position: static;
+      transform: none; /* Sidebar visible and in place */
+    }
+  }
+  
+  /* Hide sidebar on small screens */
+  @media (max-width: 1023px) { /* Tailwind's max lg breakpoint */
+    .sidebar {
+      display: none; /* Hide sidebar on mobile */
+    }
+  }
+  
+  
+  
+  

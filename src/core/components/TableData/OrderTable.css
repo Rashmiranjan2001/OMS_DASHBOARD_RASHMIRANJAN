@@ -1,0 +1,150 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #1a1a2e;
+    color: #fff;
+    min-width: 600px; /* Ensures the table has a minimum width */
+  }
+  
+  
+  .order-table th,
+  .order-table td {
+    padding: 12px 15px;
+  }
+  
+  .order-table thead {
+    background-color: #222344;
+  }
+  
+  .order-table tbody tr {
+    border-bottom: 1px solid #333;
+  }
+  
+  .order-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .order-table .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #fff;
+  }
+  
+  .order-table .status.delivered {
+    background-color: #2ecc71;
+    margin-top: 7px;
+  }
+  
+  .order-table .status.pending {
+    background-color: #f39c12;
+    margin-top: 7px;
+  }
+  
+  .order-table .status.cancelled {
+    background-color: #e74c3c;
+    margin-top: 7px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .order-table {
+      min-width: 500px; /* Adjust the min-width to make the table scrollable horizontally */
+    }
+  
+    .order-table th, .order-table td {
+      padding: 8px 10px;
+    }
+  
+    .order-table tbody tr {
+      display: table-row; /* Ensure rows are displayed as table rows */
+    }
+  }
+
+
+.review-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    max-height: 350px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .review {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  .star {
+    font-size: 1.2em;
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .star-empty {
+    color: #ddd; /* Light gray color for empty stars */
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .review-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .review-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .review-rating {
+    margin: 5px 0;
+    display: flex;
+  }
+  
+  .review-text {
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .review-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .review-image {
+      margin-bottom: 10px;
+    }
+  
+    .review-rating {
+      text-align: center;
+    }
+  
+    .review-text {
+      text-align: center;
+    }
+  }
+  
+  
+  
+  
